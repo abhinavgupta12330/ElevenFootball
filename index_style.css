@@ -5,6 +5,60 @@ body{
     background-color: black;
 }
 
+/* Style for mobile view */
+@media screen and (max-width:998px) {
+    div.mobile_nav{
+        display: grid;
+    }
+    div.mobile_nav_footer{
+        display: grid;
+    }
+    nav{
+        display: none;
+    }
+}
+
+@media screen and (min-width:999px){
+    div.mobile_nav{
+        display: none;
+    }
+    div.mobile_nav_footer{
+        display: none;
+    }
+}
+
+div.mobile_nav{
+    background-color: #1b1b1b;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0%;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.3);
+    z-index: 5;
+    grid-template-columns: 20fr 20fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+div.mobile_nav_footer{
+    background-color: #1b1b1b;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #1b1b1b;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom: 0%;
+    border-top: solid 1px rgba(128, 128, 128, 0.3);
+    z-index: 5;
+}
+img.mobile_view_icons{
+    width: 25px;
+}
+
+div.wrap_icons_nav_footer{
+    margin: 5px 50%;
+}
+
 /* Style for the navigation bar */
 
 header{
